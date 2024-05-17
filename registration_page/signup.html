@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title> <!-- Set the title of the page -->
+    <link rel="stylesheet" href="signup.css"> <!-- Link to an external CSS file -->
+	 <script src="registration_javascript.js"></script>
+</head>
+<body>
+    <div class="container"> <!-- Create a container div -->
+        <div class="signin-container"> <!-- Create a div for the signin form -->
+   
+            <form id="forms"> <!-- Start a form element -->
+			    <img src="images/profile.png" alt="Image Description"> <!-- Display an image with alt text -->
+				
+                <label>Username:</label> <!-- Display a label for the username field -->
+                <input type="text" name="username" required> <!-- Input field for the username -->
+                <h2 id="header2"></h2>   
+				   
+                <label>Password:</label> <!-- Display a label for the password field -->
+                <input type="password" name="passwords" required> <!-- Input field for the password -->
+				<h3 id="header3"></h3>
+				
+				 <label for="Select_country">enter country:</label>
+				 
+				  <select id="Select_country" name="options">
+                      <option value="Mauritius">Mauritius</option>
+                      <option value="England">England</option>
+                      <option value="Others">Others</option>
+                  </select>
+                 
+				  <label for="Select_age">enter age:</label>
+				  
+				  <select id="Select_age" name="options">
+                      <option value="Above 20">above 20</option>
+                      <option value="below 18">below 18</option>
+                  </select>
+				 
+                 <button class="box" type="button" onclick="getInformation()">sign in</button>				 				 
+            </form> <!-- End the form element -->
+        </div> <!-- End the signin container div -->
+    </div> <!-- End the container div -->
+</body>
+</html>

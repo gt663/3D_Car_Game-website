@@ -1,0 +1,88 @@
+/* Styling for the body element */
+body {
+    font-family: Arial, sans-serif; /* Set the font family for text */
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    margin: 0; /* Remove any default margins */
+    background-image: url(images/back_pi.jpg); /* Set the background image */
+    background-attachment: fixed; /* Optional, keeps the background fixed while scrolling */
+    background-position: center center; /* Center the background image */
+    background-size: cover; /* Adjust the background size as needed */
+}
+
+/* Styling for the container element */
+.container {
+    width: 100%; /* Take the full width of its parent container */
+    max-width: 400px; /* Set a maximum width for the container */
+}
+
+/* Styling for the signin container */
+.signin-container {
+    border: 1px solid #ccc; /* Add a 1px solid border with a light gray color */
+    padding: 20px; /* Add 20px of padding inside the container */
+    height: 500px; /* Set the height of the container to 400px */
+    box-shadow: 0 0 10px rgba(0, 0, 200, 0.8); /* Apply a box shadow with blue color and transparency */
+    text-align: center; /* Center-align the text content */
+    background-color: rgba(0, 200, 240, 0.2); /* Set the background color with transparency */
+    border-radius: 30px; /* Apply rounded corners with a radius of 30px */
+}
+
+/* Styling for h2 elements */
+h2 {
+    margin: 0 0 20px; /* Set margin: 0 top, 0 right, 20px bottom, 0 left */
+    color: white; /* Set the text color to white */
+}
+
+/* Styling for form element */
+form {
+    display: flex; /* Use flex layout */
+    flex-direction: column; /* Set the flex direction to column */
+    align-items: center; /* Center-align the form content */
+}
+
+/* Styling for label elements */
+label {
+    font-weight: bold; /* Apply bold font weight */
+    margin-top: 10px; /* Add margin at the top */
+    color: white; /* Set the text color to white */
+    margin-left: -220px; /* Adjust the left margin */
+}
+
+/* Styling for input elements */
+input {
+    width: 90%; /* Set the width to 90% of the parent container */
+    padding: 10px; /* Add 10px of padding */
+    margin: 5px 0; /* Add margin at the top and bottom, no margin left and right */
+    border: 1px solid black; /* Apply a 1px solid black border */
+    border-radius: 5px; /* Apply a border radius of 5px */
+    background-color: rgba(0, 0, 0, 0.3); /* Set the background color with transparency */
+}
+
+/* Styling for the  sigin box element */
+.box {
+    width: 90%; /* Set the width to 90% of the parent container */
+    padding: 10px; /* Add 10px of padding */
+    margin-top: 10px; /* Add margin at the top */
+    background-color: rgba(0, 0, 0, 0.7); /* Set the background color with transparency */
+    border: none; /* Remove the border */
+    border-radius: 5px; /* Apply a border radius of 5px */
+	color:white;
+	margin-top:1%;
+}
+
+/* Styling for anchor elements to sigin and change page */
+a {
+    text-decoration: none; /* Remove underlines and decoration from links */
+    color: white; /* Set the text color to white */
+}
+
+h2 {
+	font-size:15px;
+	color:red;
+}
+h3 {
+	font-size:15px;
+	color:red;
+}

@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+header {
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.8); /* Set the header background color with some transparency */
+    height: 40px; /* Define the header's height */
+    display: flex; /* Make the header a flex container */
+    justify-content: space-between; /* Align items to the right and left within the header */
+    align-items: center; /* Vertically center items within the header */
+}
+
+
+p {
+    font-size: 30px; /* Set the font size for paragraphs */
+    margin-left: 45%; /* Adjust the left margin for paragraphs */
+    color: black; /* Set the text color to black */
+    margin-top: 23px; /* Adjust the top margin for paragraphs */
+}
+
+button {
+    background-color: yellow; /* Set the button background color to yellow */
+    color: black; /* Set the button text color to black */
+    height: 30px; /* Set the button height */
+    width: 90px; /* Set the button width */
+    border-radius: 30px; /* Add rounded corners to the button */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Use a pointer cursor for buttons */
+}
+
+/* Styling for the 'W' key container */
+.up_container {
+    background-color: rgba(255, 255, 0, 0.8); /* Set the background color with some transparency */
+    position: absolute; /* Position the element absolutely */
+    margin-left: 70%; /* Adjust the left margin for positioning */
+    margin-top: 30%; /* Adjust the top margin for positioning */
+    width: 6%; /* Define the width of the container */
+    border-radius: 10px; /* Add rounded corners to the container */
+    height: 12%; /* Define the height of the container */
+    border: 2px solid white; /* Set a white border with 2px width */
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.8); /* Add a box shadow with yellow color */
+    text-align: center; /* Center-align the text content */
+    font-size: 50px; /* Set the font size for the text */
+}
+
+/* Styling for the 'S' key container */
+.down_container {
+    background-color: rgba(255, 255, 0, 0.8); /* Set the background color with some transparency */
+    position: absolute; /* Position the element absolutely */
+    margin-left: 70%; /* Adjust the left margin for positioning */
+    margin-top: 38%; /* Adjust the top margin for positioning */
+    width: 6%; /* Define the width of the container */
+    border-radius: 10px; /* Add rounded corners to the container */
+    height: 12%; /* Define the height of the container */
+    border: 2px solid white; /* Set a white border with 2px width */
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.8); /* Add a box shadow with yellow color */
+    text-align: center; /* Center-align the text content */
+    font-size: 40px; /* Set the font size for the text */
+}
+
+/* Styling for the 'A' key container */
+.left_container  {
+	background-color:rgba(255, 255, 0, 0.8);
+	position:absolute;
+	margin-left:62%;/*margin left changes*/
+	margin-top:38%;
+	width:6%;
+	border-radius:10px;
+	height:12%;
+    border:2px solid white;
+	box-shadow: 0 0 20px rgba(255, 255, 0, 0.8);
+	text-align:center;
+	font-size:40px;
+}
+
+/* Styling for the 'D' key container */
+.right_container  {
+	background-color:rgba(255, 255, 0, 0.8);
+	position:absolute;
+	margin-left:78%;/*margin left changes for alignment*/
+	margin-top:38%;
+	width:6%;
+	border-radius:10px;
+	height:12%;
+    border:2px solid white;
+	box-shadow: 0 0 20px rgba(255, 255, 0, 0.8);
+	text-align:center;
+	font-size:40px;
+}
+.clutch_container  {
+	background-color:rgba(255, 255, 0, 0.7);
+	position:absolute;
+	margin-left:27%;/*margin left changes for alignment*/
+	margin-top:30%;
+	width:6%;
+	border-radius:10px;
+	height:12%;
+    border:2px solid white;
+	box-shadow: 0 0 20px rgba(255, 255, 0, 0.8);
+	text-align:center;
+	font-size:70px;
+	animation: slideDown 2s ease; /* Add slideDown animation */
+}
+.gear1_container  {
+	background-color:rgba(255, 255, 0, 0.7);
+	position:absolute;
+	margin-left:10%;/*margin left changes for alignment*/
+	margin-top:16%;
+	width:6%;
+	border-radius:10px;
+	height:12%;
+    border:2px solid white;
+	box-shadow: 0 0 20px rgba(255, 255, 0, 0.8);
+	text-align:center;
+	font-size:70px;
+	animation: slideDown2 4s ease; /* Add slideDown animation */
+}
+
+.gear2_container  {
+	background-color:rgba(255, 255, 0, 0.7);
+	position:absolute;
+	margin-left:20%;/*margin left changes for alignment*/
+	margin-top:16%;
+	width:6%;
+	border-radius:10px;
+	height:12%;
+    border:2px solid white;
+	box-shadow: 0 0 20px rgba(255, 255, 0, 0.8);
+	text-align:center;
+	font-size:70px;
+	animation: slideDown2 4s ease; /* Add slideDown animation */
+}
+
+.gear3_container  {
+	background-color:rgba(255, 255, 0, 0.7);
+	position:absolute;
+	margin-left:30%;/*margin left changes for alignment*/
+	margin-top:16%;
+	width:6%;
+	border-radius:10px;
+	height:12%;
+    border:2px solid white;
+	box-shadow: 0 0 20px rgba(255, 255, 0, 0.8);
+	text-align:center;
+	font-size:70px;
+	animation: slideDown2 4s ease; /* Add slideDown animation */
+}
+
+.tuto_container  {
+	background-color:rgba(255, 255, 0, 0.7);
+	position:absolute;
+	margin-left:22%;/*margin left changes for alignment*/
+	margin-top:4%;/*margin top changes for alignment*/
+	width:70%;/*width changes for alignment*/
+	border-radius:10px;
+	height:21%;
+    border:2px solid white;
+	box-shadow: 0 0 20px rgba(255, 255, 0, 0.8);
+	text-align:center;
+	font-size:70px;
+}
+
+/*for the text tutorials explaining the game*/
+.tutorials  {
+	margin-left:0px;
+}
+
+/*keyframes to move the brake and pause containers from above to their position*/
+@keyframes slideDown {
+    0% {
+        margin-top: -100%; /* Start from above the screen */
+    }
+    100% {
+        margin-top: 30%; /* Move to the final position */
+    }
+}
+@keyframes slideDown2 {
+    0% {
+        margin-top: -100%; /* Start from above the screen */
+    }
+    100% {
+        margin-top: 16%; /* Move to the final position */
+    }
+}
+

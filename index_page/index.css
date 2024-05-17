@@ -1,0 +1,311 @@
+/* Resetting margin for the entire page */
+body {
+    margin: 0;
+}
+
+/* Styling for the fullscreen video background */
+video {
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Styling for the welcome text container with animation */
+.welcome-container {
+    position: absolute;
+	animation: slideFromLeft 2s ease-in-out forwards; /* Animation sliding text */
+    top: -10%; 
+    left: -100%; 
+}
+.two-container {
+    position: absolute;
+	animation: slideFrom 4s ease-in-out forwards;
+    top: 30%; /* Adjust the vertical position */
+    left: 50%;  
+}
+.parkmaster-container {
+    position: absolute;
+	animation: slide 7s ease-in-out forwards;
+    top: 40%;
+    left: 33%; /* Adjust the horizontal position */
+}
+
+/* Styling for headings */
+h1 {
+    font-size: 180px;/* Set the font size to 180 pixels */
+    color: black;
+    font-family: Georgia, Times, serif;
+}
+h2 {
+    font-size: 80px;
+    color: black;/* Set the text color to black */
+    font-family: Georgia, Times, serif;
+}
+h3 {
+    font-size: 120px;
+    color:rgba(0, 128, 255, 0.9);
+    font-family: Georgia, Times, serif;/* Apply a specific font family */
+}
+
+/* Styling for the header element */
+header {
+    position: absolute; /* Positioned absolutely within its container */
+    z-index: 1; /* Stacking context to ensure it's above other elements */
+    background-color: rgba(0, 100, 0, 0.6); /* Background color with transparency */
+    width: 80%; /* 80% of the parent container width */
+    height: 8%; /* Height of the header */
+    margin-left: 150px; /* Left margin of 150 pixels */
+    border-radius: 39px; /* Rounded corners with a radius of 39 pixels */
+}
+
+/* Styling for the unordered list within the navigation */
+nav ul {
+    list-style-type: none; /* Remove the default list bullet points */
+    background-color: transparent;
+    text-align: right; /* Right-align the list items */
+    color: black;
+}
+
+/* Styling for list items within the navigation */
+nav li {
+    display: inline; /* Display list items inline (horizontally) */
+    margin: 0 30px; /* Add margin to the right of each list item */
+}
+
+/* Styling for anchor links within the navigation */
+nav a {
+    text-decoration: none; /* Remove underlines and decoration from links */
+    color: white; /* Set the text color to white */
+}
+
+
+@keyframes slideFromLeft {/*animation keyframes for sliding texts*/
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 18%; /* Final horizontal position */
+    }
+}
+@keyframes slideFrom {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 50%; /* Final horizontal position */
+    }
+}
+@keyframes slide {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 33%; 
+    }
+}
+
+/* Styling for heading 4 game section describtion */
+h4  { 
+     position:absolute;
+	 top:89%;
+	 font-size: 80px;
+}
+/* Styling for the game section texts */
+.game_container1  {
+	position:absolute;/* Positioned absolutely within its container */
+	top : 120%;
+	font-size:40px;
+	background-color:rgba(0, 128, 128, 0.6);
+}
+.game_container2  {
+	position:absolute;
+	top : 127%;/* Adjust the vertical position */
+	font-size:40px;
+	background-color:rgba(128, 128, 128, 0.6);
+}
+.game_container3  {
+	position:absolute;
+	top : 134%;
+	font-size:40px;/* Set the font size to 40 pixels */
+	background-color:rgba(128, 100, 128, 0.6);
+}
+.game_container4  {
+	position:absolute;
+	top : 141%;
+	font-size:40px;
+	background-color:rgba(128, 128, 100, 0.6);/* Background color with transparency */
+}
+.game_container5  {
+	position:absolute;
+	top : 148%;
+	font-size:40px;
+	background-color:rgba(128, 50, 100, 0.6);
+}
+
+/* Styling for heading 5 about us section describtion */
+h5 {
+	 position:absolute;
+	 top:180%;
+	 font-size: 80px;
+}
+
+/* Styling for the about us section texts */
+.about_container1 {
+	position:absolute;
+	top:210%;
+	font-size: 40px; 
+	background-color:rgba(128, 100, 128, 0.6);
+}
+.about_container2 {
+	position:absolute;
+	top:217%;
+	font-size: 40px; 
+	background-color:rgba(100, 128, 128, 0.6);
+}
+.about_container3 {
+	position:absolute;
+	top:224%;
+	font-size: 40px; 
+	background-color:rgba(128, 128, 100, 0.6);
+}
+.about_container4 {
+	position:absolute;
+	top:231%;
+	font-size: 40px; 
+	background-color:rgba(128, 50, 100, 0.6);
+}
+.about_container5 {
+	position:absolute;
+	top:238%;
+	font-size: 40px; 
+	background-color:rgba(128, 128, 128, 0.6);
+}
+
+/* Styling for the image cars container */
+.image_cars_container {
+    display: flex; /* Use flexbox layout */
+    position: absolute; 
+    background-color: rgba(0, 0, 0, 0);
+    align-items: center; /* Vertically center its content */
+    justify-content: space-between; /* Space between child elements */
+    padding: 27px; /* Padding around the content */
+    width: 40%; /* Make the container take 40% of the width of the screen */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+    top: 2000px; /* Adjust the vertical position */
+    margin-left: 57%; /* Adjust the horizontal position */
+    height: 90%; /* Set the height to 90% of the container */
+    border-radius: 270px; /* Apply rounded corners with a radius of 270 pixels */
+    background-image: url(images_first_page/c.png); /* Set the background image */
+    background-size: cover; /* Cover the container with the background image */
+    background-position: center; /* Center the background image */
+    animation: changeBackground 10s linear infinite alternate; /* Apply animation */
+}
+
+/*keyframes to fade and change between the two images*/
+@keyframes changeBackground {
+    0% {
+        background-image: url(images_first_page/car.png);
+    }
+    50% {
+        background-image: url(images_first_page/sport_car.png);
+    }
+    100% {
+        background-image: url(images_first_page/car.png);
+    }
+}
+
+/* Styling for heading 6 vehicle section describtion */
+h6  {
+	position:absolute;
+	 top:258%;
+	 font-size: 80px;
+}
+
+/* Styling for the vehicle section texts */
+.car_container1 {
+	position:absolute;
+	top:292%;
+	font-size: 40px; 
+	background-color:rgba(128, 128, 128, 0.6);
+}
+.car_container2 {
+	position:absolute;
+	top:301%;
+	font-size: 40px; 
+	background-color:rgba(128, 128, 128, 0.6);
+}
+.car_container3 {
+	position:absolute;
+	top:310%;
+	font-size: 40px; 
+	background-color:rgba(128, 128, 128, 0.6);
+}
+
+/*sigin message jointhe crew at the bottom of page*/
+.signin_container  {
+	position:absolute;
+	top:360%;
+	font-size: 40px;
+    animation: moveLeftToRight 2s linear infinite alternate; /*animation to move left to right*/	
+}
+
+/*animation keyframes for the above*/
+@keyframes moveLeftToRight {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 20px; /* Adjust the distance to move left to right */
+    }
+}
+
+/*sigin button at the bottom*/
+.button_signin_below  {
+	position: absolute;
+	top: 366%;
+	width: 120px;
+	height: 40px;
+	border-radius:12px;
+	margin-left:28%;
+	background-color:rgba(200, 200, 40, 0.7);
+	 animation: blink 1s ease-in-out infinite; /*animation to fade and appear*/
+}
+
+/*keyframes for the signin button*/
+@keyframes blink {
+    0% {
+        opacity: 1; /* Visible */
+    }
+    50% {
+        opacity: 0; /* Invisible */
+    }
+    100% {
+        opacity: 1; /* Visible */
+    }
+}
+
+/*footer styles*/
+footer {
+	position:absolute;
+	top:400%;
+	width: 100%;
+	height: 7%; /*footer height*/
+	background-color:rgba(0, 0, 0, 0.5);
+}
+/*contact number bottom*/
+.contact {
+	position: absolute;
+	margin-left: 40%;
+	font-size: 20px; /*text font*/
+	color: white;
+}
+/*email at bottom*/
+.email  {
+	position: absolute;
+	margin-left: 80%;
+	font-size: 20px;
+	color: white; /*text color*/
+}

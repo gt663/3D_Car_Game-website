@@ -1,0 +1,133 @@
+/* Reset some default styles for common elements */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply some basic styles to the body */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(images_used/porche_911.png); /* Set the background image */
+    background-size: cover; /* Cover the entire viewport with the background image */
+    background-repeat: no-repeat; /* Prevent background image repetition */
+    background-attachment: fixed; /* Keep the background fixed while scrolling */
+    background-position: center center; /* Center the background image */
+    margin: 0; /* Remove default margins */
+    display: flex; /* Use a flexbox layout */
+    flex-direction: column; /* Set the flex direction to column */
+    min-height: 100vh; /* Ensure a minimum height of 100% of the viewport height */
+}
+
+/* Style the container to take remaining space */
+.container {
+    flex: 1; /* Allow the container to take remaining space */
+}
+
+/* Apply styles to the header */
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Set the background color with transparency */
+    color: black; /* Set the text color to black */
+    padding: 20px; /* Add padding to the header */
+    text-align: center; /* Center-align the text content */
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style-type: none; /* Remove list style */
+    background-color: transparent; /* Set the background color to transparent */
+    text-align: right; /* Right-align the menu items */
+    color: black; /* Set the text color to black */
+}
+
+nav li {
+    display: inline; /* Display menu items inline */
+    margin: 0 30px; /* Add margin to separate menu items */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Set the link text color to white */
+}
+
+/* Apply styles to the main content */
+main {
+    padding: 20px; /* Add padding to the main content */
+}
+
+/* Apply styles to the aside */
+aside {
+    padding: 0px 500px; /* Add horizontal padding */
+    margin: 0px 80px; /* Add horizontal margin */
+}
+
+section {
+    margin: 50px 0px; /* Add top and bottom margin */
+    padding: 20px 0px; /* Add top and bottom padding */
+	margin-top: 7%;
+}
+
+/* Style the button */
+.styled-button {
+    background-color: rgba(0, 0, 0, 0.5); /* Set the button background color with transparency */
+    color: #fff; /* Set the text color to white */
+    padding: 80px 90px; /* Add padding inside the button */
+    border: 2px solid white; /* Set a white border */
+    border-radius: 6px; /* Add rounded corners */
+    cursor: pointer; /* Change to a pointer cursor on hover */
+    font-size: 30px; /* Set the font size */
+}
+
+/* Add a hover effect to the button */
+.styled-button:hover {
+    background-color: #808080; /* Change the background color on hover */
+}
+
+/* Apply styles to the h2 element */
+h2 {
+    font-size: 100px; /* Set the font size for h2 */
+    color: #ADD8E6; /* Set the text color to light blue */
+    margin-top: 24px; /* Add top margin */
+    animation: fadeIn 10s forwards; /* Apply a fade-in animation */
+}
+
+/* Style the paragraphs in the main section */
+main p {
+    font-size: 25px; /* Set the font size for paragraphs */
+    color: white; /* Set the text color to white */
+    padding: 10px 30px; /* Add padding to paragraphs */
+    text-align: center; /* Center-align the text */
+}
+
+/* Style the play now button */
+.styled-button_for_play {
+    background-color: #ADD8E6; /* Set the button background color to light blue */
+    color: green; /* Set the text color to green */
+    padding: 10px 100px; /* Add padding inside the button */
+    border: 2px solid green; /* Set a green border */
+    border-radius: 20px; /* Add rounded corners */
+    cursor: pointer; /* Change to a pointer cursor on hover */
+    font-size: 30px; /* Set the font size */
+}
+
+/* Add a hover effect to the play now button */
+.styled-button_for_play:hover {
+    border: 1px solid black; /* Change the border on hover */
+}
+
+/* Style the footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.5); /* Set the background color of the footer with transparency */
+    color: white; /* Set the text color to white */
+    text-align: center; /* Center-align the text in the footer */
+    padding: 10px; /* Add padding to the footer */
+}
+
+/* Keyframes for the fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start with 0% opacity invisible */
+    }
+    100% {
+        opacity: 1; /* End with 100% opacity visible */
+    }
+}

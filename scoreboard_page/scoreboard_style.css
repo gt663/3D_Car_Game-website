@@ -1,0 +1,64 @@
+/* Reset some default styles and apply basic styles to the entire body */
+body {
+    margin: 0; /* Remove default margin */
+    min-height: 100vh; /* Minimum height of the viewport */
+    display: flex; /* Create a flex container for the body */
+    flex-direction: column; /* Set flex direction to column */
+    background-color: black; /* Set background color to black */
+    overflow: hidden; /* Hide any content overflowing the viewport */
+}
+
+/* Style the header element, which contains navigation and other info */
+header {
+    width: 100%; /* Make the header full-width */
+    background-color: rgba(128, 128, 128, 0.8); /* Background color with opacity */
+    height: 40px; /* Set header height */
+    display: flex; /* Use flexbox for header layout */
+    justify-content: space-between; /* Align items to the right and left */
+    align-items: center; /* Vertically center items */
+}
+
+
+/* Style the paragraph elements within the page */
+p {
+    font-size: 30px; /* Set the font size */
+    margin-left: 45%; /* Adjust left margin */
+    color: black; /* Text color */
+    margin-top: 23px; /* Set top margin */
+}
+
+/* Style buttons used within the page */
+button {
+    background-color: yellow; /* Button background color */
+    color: black; /* Text color */
+    height: 30px; /* Button height */
+    width: 90px; /* Button width */
+    border-radius: 30px; /* Rounded button corners */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* Apply styles to the second container */
+.container2 {
+    background-color: rgba(255, 255, 0, 0.8); /* Container background color with opacity */
+    position: absolute; /* Position the container absolutely within its parent */
+    margin-left: 35%; /* Set left margin */
+    margin-top: 4%; /* Set top margin */
+    width: 28%; /* Set container width */
+    border-radius: 10px; /* Rounded corners for the container */
+    height: 80%; /* Set container height */
+    border: 2px solid white; /* Add a border with white color */
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.8); /* Apply a shadow effect */
+    animation: moveUp 2s ease-in-out forwards; /* Apply an animation to move the container */
+}
+
+
+/*key frame to move containes up*/
+@keyframes moveUp {
+  0% {
+    margin-top: 100%; /* Start position: below */
+  }
+  100% {
+    margin-top: 4%; /* Final position: desired place */
+  }
+}
